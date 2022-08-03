@@ -1,0 +1,11 @@
+  applications:
+  - name: djangoapp
+    routes:
+      - route: paulob.mybluemix.net
+    memory: 128M
+    buildpack: python_buildpack
+  - name: paulob-nginx
+    routes:
+      - route: paulob.mybluemix.net/static
+    memory: 128M
+    buildpack: staticfile_buildpack
